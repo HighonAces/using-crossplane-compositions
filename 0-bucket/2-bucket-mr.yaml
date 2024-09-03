@@ -1,0 +1,6 @@
+apiVersion: srujanpakanati.com/v1alpha1
+kind: custombucket
+metadata:
+  name: my-first-bucket-using-composition
+spec:
+  region: us-east-2
