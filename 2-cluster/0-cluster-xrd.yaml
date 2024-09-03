@@ -1,7 +1,7 @@
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:
-  name: cluster.srujanpakanati.com
+  name: clusters.srujanpakanati.com
 spec:
   group: srujanpakanati.com
   names:
@@ -35,6 +35,10 @@ spec:
                     - Orphan
                     type: string
                     default: Delete
+                  providerConfigName:
+                    description: Crossplane ProviderConfig to use for provisioning this resources
+                    type: string
+                    default: default
                   version:
                     description: Kubernetes version
                     type: string

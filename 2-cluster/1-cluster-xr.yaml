@@ -1,0 +1,14 @@
+apiVersion: srujanpakanati.com/v1alpha1
+kind: cluster
+metadata:
+  name: configuration-aws-eks
+spec:
+  parameters:
+    id: configuration-aws-eks
+    nodes:
+      count: 3
+      instanceType: t3.small
+    region: us-east-2
+    deletionPolicy: Delete
+    providerConfigName: default
+    version: "1.30"
