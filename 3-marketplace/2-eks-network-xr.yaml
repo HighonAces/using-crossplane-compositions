@@ -1,0 +1,22 @@
+apiVersion: aws.platform.upbound.io/v1alpha1
+kind: XNetwork
+metadata:
+  name: configuration-aws-eks
+spec:
+  parameters:
+    id: configuration-aws-eks
+    region: us-east-2
+    subnets:
+    - availabilityZone: us-east-2a
+      cidrBlock: 192.168.0.0/18
+      type: public
+    - availabilityZone: us-east-2b
+      cidrBlock: 192.168.64.0/18
+      type: public
+    - availabilityZone: us-east-2a
+      cidrBlock: 192.168.128.0/18
+      type: private
+    - availabilityZone: us-east-2b
+      cidrBlock: 192.168.192.0/18
+      type: private
+    vpcCidrBlock: 192.168.0.0/16
